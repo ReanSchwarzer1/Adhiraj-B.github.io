@@ -9565,6 +9565,7 @@ textarea.form-control {
     font-weight: 600;
     margin-bottom: 20px;
     font-size: 20px; }
+    
 
 .categories, .sidelink {
   padding: 0;
@@ -9650,6 +9651,62 @@ textarea.form-control {
   -webkit-animation: loader-dash 1.5s ease-in-out infinite;
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round; }
+  .srmlogo{
+    margin-left:160px ;
+  }
+  .miclogo
+  {
+    position: absolute;
+    margin-left:-30px ;
+    margin-top:70px;
+    
+  }
+  .nextlogo
+  {
+    height:60px;
+    width:70px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+   
+    
+  }
+  .aieseclogo
+  {
+    margin-left:100px ;
+  }
+  .streetlogo
+  {
+    
+    height:90px;
+    width:100px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+
+  }
+  .unlogo
+  {
+    height:80px;
+    width:80px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+
+  }
+  .boltlogo
+  {
+    height:50px;
+    width:150px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+   
+  }
+  .unitylogo
+  { height:115px;
+    width:120px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+
+  }
+ 
 
 @-webkit-keyframes loader-rotate {
   100% {
