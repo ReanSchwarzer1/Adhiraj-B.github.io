@@ -37,6 +37,7 @@ body {
 	line-height: 1.8;
 	font-weight: 400;
 	color: lighten($black,60%);
+	overflow: scroll;
 	&.menu-show {
 		overflow: hidden;
 		position: fixed;
