@@ -60,7 +60,28 @@
 		});
 
 	};
+	
+
 	burgerMenu();
+	var burgerMenu1 = function() {
+
+		$('body').on('click', '.nav-item', function(event){
+
+			event.preventDefault();
+
+			if ( $('#ftco-nav').is(':visible') ) {
+				$(this).removeClass('active');
+			} else {
+				$(this).addClass('active');	
+			}
+
+			
+			
+		});
+
+	};
+	burgerMenu1();
+	
 
 
 	var onePageClick = function() {

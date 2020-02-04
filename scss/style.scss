@@ -5,7 +5,7 @@ $font-primary: 'Poppins',Arial, sans-serif;
 
 $white: #fff;
 $black: #000000;
-$darken: #232931;
+$darken: #a0a2a5;
 
 $primary: #ffbd39;
 $secondary: #a0f669;
@@ -39,7 +39,7 @@ body {
 	color: lighten($black,60%);
 	overflow: scroll;
 	&.menu-show {
-		overflow: hidden;
+		overflow: scroll;
 		position: fixed;
 		height: 100%;
 		width: 100%;
@@ -89,6 +89,10 @@ h1, h2, h3, h4, h5,
 		padding: 0;
 		@include media-breakpoint-up(lg){
 		}
+	}
+	#menu
+	{
+		color: white;
 	}
 
 	.navbar-brand {
