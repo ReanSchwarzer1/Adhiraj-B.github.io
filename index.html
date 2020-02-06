@@ -9,6 +9,23 @@
       emailjs.init("user_kv9Bw5pHmniA5xdi1n9Jn");
    })();
 </script>
+<script>
+	var templateParams = {
+    to_name: document.getElementById("name").value,
+	from_name: document.getElementById("email").value,
+	message_html:document.getElementById("message").value,
+
+};
+ $('#send').on('click');
+emailjs.send('gmail', 'template_4bvtuuWB', templateParams)
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+	});
+
+
+</script>
  <script type="text/javascript">
 	window.onload = function() {
 		document.getElementById('contact-form').addEventListener('submit', function(event) {
@@ -561,19 +578,19 @@
           <div class="col-md-6 order-md-last d-flex">
             <form action="#" class="bg-light p-4 p-md-5 contact-form" id="contact-form">
               <div class="form-group">
-                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" value="sanskar">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" id="email" name="email" placeholder="Your Email">
+                <input type="text" class="form-control" id="email" name="email" placeholder="Your Email"value="sanskar">>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" id="Subject"  name="subject" placeholder="Subject">
+                <input type="text" class="form-control" id="Subject"  name="subject" placeholder="Subject" value="sanskar">>
               </div>
               <div class="form-group">
-                <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message"value="sanskar"></textarea>></textarea>
               </div>
               <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                <input type="submit" value="Send Message"  id="send" class="btn btn-primary py-3 px-5">
               </div>
             </form>
           </div>
