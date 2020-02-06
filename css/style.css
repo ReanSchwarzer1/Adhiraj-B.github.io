@@ -453,11 +453,7 @@ pre {
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll; }
-  @media (max-width: 576px) {
-    .hero {
-      max-width: 540px;
-      height: 600px; 
-    overflow:scroll;} }
+  
 
 .container {
   width: 100%;
