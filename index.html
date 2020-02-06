@@ -68,7 +68,7 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home0</span></a></li>
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home1</span></a></li>
 			  <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 			  <li class="nav-item"><a href="#edu-section" class="nav-link"><span>Education</span></a></li>
 	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Timeline</span></a></li>
@@ -115,7 +115,11 @@
 	        	</div>
 	        </div>
 	      </div>
-
+<script>
+	$( "#h" ).mouseup(function() {
+	alert( "Handler for .mouseup() called." );
+  });
+</script>
 	      <div class="slider-item">
 	      	<div class="overlay"></div>
 	        <div class="container">
@@ -125,7 +129,7 @@
 	          	</div>
 		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
+		          		<span class="subheading" id="h">Hello!</span>
 			            <h1 class="mb-4 mt-3">I'm  a <span>Mixed Reality Researcher</span> </h1>
 						<p> <a href="#resume-section" class="btn btn-white btn-outline-white py-3 px-4">My Timeline</a></p>
 						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">

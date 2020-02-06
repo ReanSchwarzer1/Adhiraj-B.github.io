@@ -15,6 +15,9 @@
     hideDistantElements: false,
     scrollProperty: 'scroll'
   });
+  $( "#home-section" ).mouseup(function() {
+	alert( "Handler for .mouseup() called." );
+  });
 
 
 	var fullHeight = function() {
