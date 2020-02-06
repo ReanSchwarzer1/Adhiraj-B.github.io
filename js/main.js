@@ -15,7 +15,6 @@
     hideDistantElements: false,
     scrollProperty: 'scroll'
   });
-  
 
 
 	var fullHeight = function() {
