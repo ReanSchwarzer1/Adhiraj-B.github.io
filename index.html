@@ -43,6 +43,7 @@
 	<script type="text/javacript" src="app.js"></script>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" >
+	  <div id="particles-js"></div>
 	
 
 <!-- scripts -->
@@ -87,7 +88,10 @@
 	  
 	 
 	  <section id="home-section" class="hero">
+		
+		  
 		  <div class="home-slider  owl-carousel">
+			  
 	      <div class="slider-item ">
 	      	<div class="overlay"></div>
 	        <div class="container">
@@ -556,7 +560,25 @@
           </div>
        
         </div>
+		<script>
+			$(document).ready(()=>{
+				$('#btn').click(()=>{
+					alert("fhd");
+				})
+			})
+			b=function(){
+			var template_params = {
+   "reply_to": document.getElementById(name).innerText,
+   "from_name": document.getElementById(name).innerText,
+   "to_name": document.getElementById(name).innerText,
+   "message_html": document.getElementById(name).innerText
+}
+var service_id = "gmail";
+var template_id = "template_4bvtuuWB";
+emailjs.send(service_id, template_id, template_params);
 
+}
+			</script>
         <div class="row no-gutters block-9">
           <div class="col-md-6 order-md-last d-flex">
             <form action="#" class="bg-light p-4 p-md-5 contact-form" id="contact-form">
@@ -573,7 +595,7 @@
                 <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
               </div>
               <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                <input type="submit" id="btn" value="Send Message" class="btn btn-primary py-3 px-5">
               </div>
             </form>
           </div>

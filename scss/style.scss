@@ -379,7 +379,6 @@ h1, h2, h3, h4, h5,
 	.owl-dots {
 		text-align: center;
 		.owl-dot {
-			width: 10px;
 			height: 10px;
 			margin: 5px;
 			border-radius: 50%;
@@ -429,7 +428,6 @@ h1, h2, h3, h4, h5,
 				opacity: 0;
 			}
 			.slider-text {
-				height: 20px;
 				z-index: 0;
 				@include media-breakpoint-down(md){
 					text-align: center;
