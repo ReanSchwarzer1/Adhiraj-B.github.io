@@ -9,17 +9,7 @@
       emailjs.init("user_kv9Bw5pHmniA5xdi1n9Jn");
    })();
 </script>
- <script type="text/javascript">
-	window.onload = function() {
-		document.getElementById('contact-form').addEventListener('submit', function(event) {
-			event.preventDefault();
-			// generate the contact number value
-		
-			console.log("yes")
-			emailjs.sendForm('contact_service', 'contact_template', this);
-		});
-	}
-</script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -562,21 +552,19 @@
        
         </div>
 		<script>
-			$(document).ready(()=>{
-				$('#btn').click(()=>{
-					alert("fhd");
-				})
-			})
+			
 			b=function(){
 			var template_params = {
-   "reply_to": document.getElementById(name).innerText,
-   "from_name": document.getElementById(name).innerText,
-   "to_name": document.getElementById(name).innerText,
-   "message_html": document.getElementById(name).innerText
+   "reply_to": document.getElementById("email").value ,
+   "from_name": document.getElementById("Subject").value,
+   "to_name": document.getElementById("name").value,
+   "message_html": document.getElementById("message").value
 }
 var service_id = "gmail";
 var template_id = "template_4bvtuuWB";
+console.log("sent");
 emailjs.send(service_id, template_id, template_params);
+alert("sent");
 
 }
 			</script>
@@ -596,7 +584,7 @@ emailjs.send(service_id, template_id, template_params);
                 <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
               </div>
               <div class="form-group">
-                <input type="submit" id="btn" value="Send Message" class="btn btn-primary py-3 px-5">
+                <input type="submit" id="btn" value="Send Message" onclick="b()" class="btn btn-primary py-3 px-5">
               </div>
             </form>
           </div>
