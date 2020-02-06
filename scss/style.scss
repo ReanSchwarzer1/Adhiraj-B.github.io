@@ -296,6 +296,11 @@ h1, h2, h3, h4, h5,
 				margin-left: 0 !important;
 			}
 		}
+		.hero
+		{
+			height: 80%;
+		}
+	
 
 		.navbar-toggler {
 			border: none;
@@ -424,7 +429,7 @@ h1, h2, h3, h4, h5,
 				opacity: 0;
 			}
 			.slider-text {
-				height: 750px;
+				height: 20px;
 				z-index: 0;
 				@include media-breakpoint-down(md){
 					text-align: center;
